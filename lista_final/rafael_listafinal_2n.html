@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script language=javascript>
+    primeiro=prompt("Telefonou para vítima?")
+    segunda=prompt("Esteve no local do crime?")
+    terceira=prompt("Mora perto da vítima")
+    quarta=prompt("Devia para vítima")
+    quinta=prompt("Já trabalhou com vítima")
+
+    resposta = 0
+    resposta += (prompt(qual)=="s")
+
+    if(resposta==5)
+    {
+        document.write("Assassino")
+    }
+    else if(resposta>=3)
+    {
+        document.write("Cúmplice")
+    }
+    else if(resposta==2)
+    {
+        document.write("Suspeito")
+    }
+    else
+    {
+        document.write("Inocente")
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script language=javascript>
+        ganha_em_horas=prompt("digite quando você ganha");
+        horas_trabalhadas=prompt("digite quantas horas trabalhadas");
+        total=parseFloat(ganha_em_horas) * parseFloat(horas_trabalhadas);
+        ir=(11/100.0 * total);
+        inss=(8/100.0 * total);
+        sindicato=(5/100.0 * total);
+
+        desconto=ir+inss+sindicato
+        salariol=total - desconto
+
+        document.write('seu salario bruto é:' + total + "<br/>");
+        document.write("valor dos imposto" + "<br/>");
+        document.write("ir:" + ir + "<br/>");
+        document.write("inss;" + inss + "<br/>");
+        document.write("sindicato:" + sindicato + "<br/>");
+        document.write("seu salario liquido é:" + salariol + "<br/>")
+        </script>
+    </head>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script language=javascript>
+    salario=parseFloat(prompt("Salario do colaborador?"))
+
+    if(salario<=280)
+    {
+        percentual=20
+    }
+    else if(salario<=700)
+    {
+        percentual=15
+    }
+    else if(salario<=1500)
+    {
+        percentual=10
+    }
+    else
+    {
+        percentual=5
+    }
+
+    document.write("Salario Original:R$" + salario+"<br/>");
+    document.write("Percentual:"+percentual+"%"+"<br/>");
+
+    percentual=percentual/100.0
+    aumento=percentual*salario
+    novo_salario=salario+aumento
+
+    document.write("Aumento:R$"+aumento+"<br/>");
+    document.write("Novo Salario:R$"+novo_salario+"<br/>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
